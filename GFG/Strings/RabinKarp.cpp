@@ -7,7 +7,8 @@ void RBSearch(string pat,string txt,int M, int N){
     //Compute (d^(M-1))%q
     int h=1;
     for(int i=1;i<=M-1;i++)
-        h=(h*d)%q;
+        h=(h*d)%q;//using modulo to store large values in small hash
+    
     
     //Compute p and t
     int p=0,t=0;
