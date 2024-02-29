@@ -17,6 +17,25 @@ void printlist(Node *head){
         cout<<p->data<<" ";
 }
 
+Node *insertBegin(Node *head, int data){
+    Node *temp=new Node (data);
+    if (head==NULL)
+    {
+        temp->next=temp;
+        return temp;
+    }
+    else {
+        temp->next=head->next;
+        head->next=temp;//swapping the pointers by inserting the temp at position 2
+
+        int t=temp->data;//swapping the data so that the data in temp gets in head
+        temp->data=head->data;
+        head->data=t;
+
+        return head;
+    }
+}
+
 int main() 
 { 
 	Node *head=new Node(10);
