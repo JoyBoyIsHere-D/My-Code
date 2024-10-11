@@ -76,6 +76,6 @@ int main(){
 	root->right->left=new Node(15);
 	root->right->right=new Node(7);
 	
-	printLevel2(root);
+	printLevel3(root);
     return 0;
 }
