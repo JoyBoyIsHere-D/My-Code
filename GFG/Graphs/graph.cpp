@@ -10,7 +10,7 @@ const int m1=1e7+10;
 const int m2=998244353;
 
 void solve(){
-    
+    cout<<"Hello World"<<endl;
 }
 
 int32_t main() {
